@@ -1,0 +1,55 @@
+# Differential Equations
+
+dC/dt=r*C*(1-C/K)-aL*C*A/(1+hL*C)
+dCBt/dt=r*CBt*(1-CBt/KBt)-aL*CBt*A/(1+hL*CBt)
+dE/dt=(K/(K+KBt))*f*A-nE*E-aP*(E^alpha)*P
+dEBt/dt=(KBt/(K+KBt))*f*A-nE*EBt-aP*(EBt^alpha)*P
+dL/dt=cL*E*C*A/(1+hL*C)-qL*L^2-nL*L
+dLBt/dt=cL*EBt*CBt*A/(1+hL*CBt)-qL*LBt^2-mBt*LBt-nL*LBt
+dA/dt=nL*(L+LBt)-mA*A
+dP/dt=aP*(E^alpha+EBt^alpha)*P-mP*P
+
+# Parameters
+p aP=0.06
+p mBt=0.04
+p alpha=0.5
+p r=0.7
+p K=10
+p aL=0.18
+p hL=2
+p KBt=190
+p f=2
+p nE=1
+p cL=1
+p qL=0.01
+p nL=0.01
+p mA=0.1
+p mP=0.3
+
+# Initial Conditions
+
+# Unstable Equilibrium Point
+#C(0)=8.17805
+#CBt(0)=1.09023
+#E(0)=1.22974
+#EBt(0)=23.3652
+#L(0)=26.1987
+#LBt(0)=96.7758
+#A(0)=12.2974
+#P(0)=0
+
+# Stable Equilibrium Point
+C(0)=8.2758
+CBt(0)=188.479
+E(0)=0.510611
+EBt(0)=18.3649
+L(0)=16.3402
+LBt(0)=101.347
+A(0)=11.7688
+P(0)=15.54
+
+# XPPAUT Parameters
+
+@parmin=0,parmax=10000
+@dsmin=0.001,ds=0.01,dsmax=0.1
+done
