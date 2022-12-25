@@ -1,43 +1,25 @@
 # Requirements to run the code
-h5py==3.0.0
-pandas==1.1.4
-tqdm==4.51.0
-ffmpeg==1.4
-SALib==1.3.13
-pymc3==3.10.0
-arviz<=0.11.0
-scipy==1.4.1
-numpy==1.18.2
-
-# Python
-attrs==19.3.0
-ipython==7.13.0
-#twine==3.1.1
-numba==0.48.0
-invoke==1.4.1
+numpy==1.22.1
+scipy==1.7.3
+pandas==1.4.3
+tqdm==4.64.0
+SALib==1.4.5
+pymc3==3.11.5
+numba==0.56.0
 
 # Excel IO with pandas
-xlrd==1.2.0
-openpyxl
+xlrd==2.0.1
+openpyxl==3.0.10
 
 # Jupyter Notebooks
 jupyter==1.0.0
-notebook==6.1.5
-jupytext==1.6.0
+notebook==6.4.12
+jupytext==1.14.1
 
 # Plotting
-matplotlib==3.3.2
+matplotlib==3.5.3
 seaborn
-bokeh
-altair==4.0.1
 
-# Formatters and Checkers
-pre-commit==2.2.0
-
-# Tests
-pytest==5.4.1
-pytest-cov==2.8.1
-pytest-xdist==1.31.0
-pytest-regressions==2.0.0
-pytest-lazy-fixture==0.6.3
-codecov==2.0.22
+# Bifurcation
+PyDSTool==0.91.0
+parser
